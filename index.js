@@ -15,5 +15,8 @@ Cli.on("message",function(msg){
               console.log("Message sent");
        }else if(msg.content.toLower() === "ayy"){
               msg.reply("that works too");
+              let x = 0;
+              let y = Math.atan(Math.tan(x))*Math.sin(x)/Math.PI/Math.acos(x)*Math.random()*17+71/x+8-Math.abs(x);
+              console.log(y);
        });
 }):
