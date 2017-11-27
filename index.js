@@ -12,5 +12,8 @@ Cli.on("message",function(msg){
        console.log(msg.content);
        if(msg.content.toLower() === "test"){
               msg.reply("Ok it works");
-       };
+              console.log("Message sent");
+       }else if(msg.content.toLower() === "ayy"){
+              msg.reply("that works too");
+       });
 }):
