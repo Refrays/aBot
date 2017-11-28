@@ -4,6 +4,16 @@ const Discord = require("Discord.js");
 const Cli = new Discord.Client();
 const key = "";
 
+let Commands = {
+       {
+              ["Name"] = "test",
+              ["ModLevel"] = 0,
+              ["Func"] = function(){
+                     console.log("Works");
+              }
+       }
+};
+
 Cli.on("ready",function(){
        console.log("Bot Online");
 });
