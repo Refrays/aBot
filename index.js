@@ -14,6 +14,10 @@ let Commands = {
        }
 };
 
+function LaunchCommand(msg){
+       
+};
+
 Cli.on("ready",function(){
        console.log("Bot Online");
 });
@@ -29,4 +33,4 @@ Cli.on("message",function(msg){
               let y = Math.atan(Math.tan(x))*Math.sin(x)/Math.PI/Math.acos(x)*Math.random()*17+71/x+8-Math.abs(x);
               console.log(y);
        });
-}):
+});
