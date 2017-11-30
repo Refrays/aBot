@@ -8,23 +8,27 @@ let Commands = {
        {
               ["Name"] = "test",
               ["ModLevel"] = 0,
-              ["Func"] = function(msg){
-                     console.log("Works");
-              }
        },
+};
+
+function GetPower(msg){
+       return 0;
+};
+
+function doStuff(msg){
+       let newM = msg.content.toLower();
+       if(newM === "test"){
+              console.log("this works yay");
+       }:
 };
 
 function LaunchCommand(msg){
        for (var i = 0; i < Commands.length; i++){
               if (msg.content.toLower() === Commands[i]["Name"]){
-                     Commands[i].Func(msg);
+                     //Commands[i].Func(msg);
                      break;
               };
        };
-};
-
-function GetPower(msg){
-       return 0;
 };
 
 Cli.on("ready",function(){
